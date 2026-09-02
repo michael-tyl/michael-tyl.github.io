@@ -3,220 +3,204 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project 0: Becoming Friends with Your Camera | Michael Liu</title>
-  <link href="../../styles.css" rel="stylesheet">
+  <title>Project 0 · Becoming Friends with Your Camera · Michael Liu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="../../assets/site.css" rel="stylesheet">
 </head>
-<body class="bg-slate-900 text-gray-200 antialiased">
+<body>
 
-  <nav class="border-b border-slate-700 bg-slate-900/80 backdrop-blur sticky top-0 z-10">
-    <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between text-sm">
-      <div class="flex items-center gap-2 text-gray-400">
-        <a href="../../" class="hover:text-white transition">Michael Liu</a>
-        <span>/</span>
-        <a href="../" class="hover:text-white transition">CS180</a>
-        <span>/</span>
-        <span class="text-gray-200">Project 0</span>
+  <nav class="nav">
+    <div class="wrap">
+      <div class="crumbs">
+        <a href="../../">Michael Liu</a><span>/</span>
+        <a href="../">CS180</a><span>/</span>
+        <span class="here">Project 0</span>
       </div>
-      <div class="hidden sm:flex gap-5 text-gray-400">
-        <a href="#part1" class="hover:text-white transition">Selfie</a>
-        <a href="#part2" class="hover:text-white transition">Architecture</a>
-        <a href="#part3" class="hover:text-white transition">Dolly Zoom</a>
+      <div class="links">
+        <a href="#part1">01 Selfie</a>
+        <a href="#part2">02 Architecture</a>
+        <a href="#part3">03 Dolly Zoom</a>
       </div>
     </div>
   </nav>
 
-  <header class="max-w-5xl mx-auto px-6 pt-16 pb-12">
-    <p class="text-sm uppercase tracking-widest text-sky-400 font-semibold">CS180 &middot; Fall 2026 &middot; Project 0</p>
-    <h1 class="mt-3 text-4xl sm:text-5xl font-bold text-white leading-tight">Becoming Friends with Your Camera</h1>
-    <p class="mt-5 text-lg text-gray-400 max-w-3xl">
-      Three small experiments on the relationship between perspective, focal length, and the
-      center of projection. Every photo was taken on an iPhone.
+  <header class="hero wrap">
+    <div class="eyebrow">CS180 · Fall 2026 · Project 0</div>
+    <h1>Becoming Friends <em>with Your Camera</em></h1>
+    <p class="lede">
+      Three small experiments on the relationship between perspective, focal length, and
+      the center of projection. Every photo was taken on an iPhone. The lesson, in one line:
+      zoom changes the size of things, but only moving the camera changes their shape.
     </p>
+    <div class="strip" aria-hidden="true">
+      <img src="img/face_zoomout.jpg" alt="">
+      <img src="img/face_zoomin.jpg" alt="">
+      <img src="img/building-far.jpg" alt="">
+      <img src="img/building-close.jpg" alt="">
+      <img src="img/dolby1.jpg" alt="">
+      <img src="img/dolby8.jpg" alt="">
+      <div class="cap">Contact sheet · 12 exposures</div>
+    </div>
   </header>
 
-  <main class="max-w-5xl mx-auto px-6 pb-24 space-y-24">
+  <main class="wrap">
 
-    <!-- Part 1 -->
-    <section id="part1" class="scroll-mt-24">
-      <p class="text-sm uppercase tracking-widest text-sky-400 font-semibold">Part 1</p>
-      <h2 class="mt-2 text-3xl font-bold text-white">Selfie: The Wrong Way vs. The Right Way</h2>
-      <p class="mt-4 text-gray-400 max-w-3xl">
-        The first photo was taken at arm&rsquo;s length with no zoom. The second was taken from several
-        feet away, zoomed in so that the face fills roughly the same area of the frame.
-      </p>
-
-      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-        <figure class="bg-slate-800 rounded-2xl overflow-hidden border border-slate-700">
-          <img src="img/face_zoomout.jpg" alt="Close-up selfie, wide angle, no zoom" class="w-full aspect-[3/4] object-cover">
-          <figcaption class="p-5">
-            <div class="flex items-center gap-2">
-              <span class="px-2 py-0.5 rounded-full text-xs font-semibold bg-rose-500/20 text-rose-300">Wrong way</span>
-              <span class="text-white font-semibold">Close up, no zoom</span>
-            </div>
-            <p class="mt-2 text-sm text-gray-400">
-              Camera about a foot from my face. The nose looks big, the cheeks bulge outward, and the
-              ears nearly vanish behind the head.
-            </p>
-          </figcaption>
-        </figure>
-
-        <figure class="bg-slate-800 rounded-2xl overflow-hidden border border-slate-700">
-          <img src="img/face_zoomin.jpg" alt="Portrait from several feet away, zoomed in" class="w-full aspect-[3/4] object-cover">
-          <figcaption class="p-5">
-            <div class="flex items-center gap-2">
-              <span class="px-2 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/20 text-emerald-300">Right way</span>
-              <span class="text-white font-semibold">Far away, zoomed in</span>
-            </div>
-            <p class="mt-2 text-sm text-gray-400">
-              Camera several feet back, zoomed in until the face was the same size. Facial proportions look
-              natural and much closer to what you see in a mirror.
-            </p>
-          </figcaption>
-        </figure>
-      </div>
-
-      <div class="mt-8 bg-slate-800/60 border border-slate-700 rounded-2xl p-6">
-        <h3 class="text-white font-semibold">Why does this happen?</h3>
-        <p class="mt-2 text-gray-400">
-          Perspective distortion depends only on where the camera is, not on how far it is zoomed in.
-          When the camera is a foot from my face, the tip of my nose is noticeably closer to the lens
-          than my ears are, so the nose projects much larger relative to the rest of the head. Stepping
-          back makes the relative depth differences across the face tiny compared to the distance to the
-          camera, so every feature is scaled by nearly the same amount. Zooming in afterward just crops
-          and magnifies that flatter, more faithful projection.
-        </p>
-      </div>
-    </section>
-
-    <!-- Part 2 -->
-    <section id="part2" class="scroll-mt-24">
-      <p class="text-sm uppercase tracking-widest text-sky-400 font-semibold">Part 2</p>
-      <h2 class="mt-2 text-3xl font-bold text-white">Architectural Perspective Compression</h2>
-      <p class="mt-4 text-gray-400 max-w-3xl">
-        Same experiment in reverse, on the Valley Life Sciences Building at Berkeley. First a zoomed-in shot from
-        far away, then a wide shot after walking up so the facade appears roughly the same size.
-      </p>
-
-      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-        <figure class="bg-slate-800 rounded-2xl overflow-hidden border border-slate-700">
-          <img src="img/building-far.jpg" alt="Building photographed from far away with zoom" class="w-full aspect-[4/3] object-cover">
-          <figcaption class="p-5">
-            <div class="flex items-center gap-2">
-              <span class="px-2 py-0.5 rounded-full text-xs font-semibold bg-violet-500/20 text-violet-300">Compressed</span>
-              <span class="text-white font-semibold">Far away, zoomed in</span>
-            </div>
-            <p class="mt-2 text-sm text-gray-400">
-              The facade looks flat and poster-like. The columns are all nearly the same size and the
-              side wall barely recedes.
-            </p>
-          </figcaption>
-        </figure>
-
-        <figure class="bg-slate-800 rounded-2xl overflow-hidden border border-slate-700">
-          <img src="img/building-close.jpg" alt="Building photographed up close without zoom" class="w-full aspect-[4/3] object-cover">
-          <figcaption class="p-5">
-            <div class="flex items-center gap-2">
-              <span class="px-2 py-0.5 rounded-full text-xs font-semibold bg-amber-500/20 text-amber-300">Perspective</span>
-              <span class="text-white font-semibold">Up close, no zoom</span>
-            </div>
-            <p class="mt-2 text-sm text-gray-400">
-              The near columns tower over the far ones and the lines of the facade converge sharply.
-              The building feels three-dimensional and looming.
-            </p>
-          </figcaption>
-        </figure>
-      </div>
-
-      <div class="mt-8 bg-slate-800/60 border border-slate-700 rounded-2xl p-6">
-        <h3 class="text-white font-semibold">Why does this happen?</h3>
-        <p class="mt-2 text-gray-400">
-          This is the same effect as the selfie, just applied to a subject with a lot of depth. From far
-          away, the near and far corners of the building are at almost the same distance from the camera,
-          so they project to nearly the same size and the depth is compressed. Up close, the near corner
-          might be half as far from the camera as the far corner, so it appears twice as large. The
-          strong size gradient across the facade is what our brains read as depth. Zoom only changes the
-          magnification of the image; moving the camera changes the geometry.
-        </p>
-      </div>
-    </section>
-
-    <!-- Part 3 -->
-    <section id="part3" class="scroll-mt-24">
-      <p class="text-sm uppercase tracking-widest text-sky-400 font-semibold">Part 3</p>
-      <h2 class="mt-2 text-3xl font-bold text-white">The Dolly Zoom</h2>
-      <p class="mt-4 text-gray-400 max-w-3xl">
-        The &ldquo;Vertigo shot&rdquo;: move the camera backward while zooming in so the subject stays the same size
-        in the frame. Eight stills of a Labubu on my windowsill, combined into an animated GIF.
-      </p>
-
-      <div class="mt-8 grid grid-cols-1 lg:grid-cols-5 gap-6 items-start">
-        <figure class="lg:col-span-3 bg-slate-800 rounded-2xl overflow-hidden border border-slate-700">
-          <img src="img/dolly-zoom.gif" alt="Dolly zoom animation of a stuffed toy on a windowsill" class="w-full">
-          <figcaption class="p-5 text-sm text-gray-400">
-            Camera pulls back and zooms in over eight frames. The toy stays the same size while the
-            skyline behind it grows and closes in.
-          </figcaption>
-        </figure>
-
-        <div class="lg:col-span-2 bg-slate-800/60 border border-slate-700 rounded-2xl p-6">
-          <h3 class="text-white font-semibold">Why does this happen?</h3>
-          <p class="mt-2 text-gray-400">
-            Moving the camera back shrinks everything, but it shrinks nearby objects much faster than
-            distant ones. Zooming in then scales the whole image up uniformly. If the zoom is chosen so
-            the near subject returns to its original size, the far background, which shrank by a much
-            smaller factor, ends up magnified well beyond its original size. The background appears to
-            rush toward the subject while the subject sits still, and the field of view narrows, which is
-            the disorienting feeling of the effect.
+    <!-- ===== Part 1 ===== -->
+    <section id="part1" class="section">
+      <div class="section-head">
+        <div class="num">01</div>
+        <div>
+          <h2>Selfie: the wrong way vs. the right way</h2>
+          <p class="lede">
+            The first photo was taken at arm&rsquo;s length with no zoom. For the second I stepped back
+            several feet and zoomed in until my face filled about the same area of the frame.
           </p>
         </div>
       </div>
 
-      <h3 class="mt-12 text-white font-semibold">The individual frames</h3>
-      <p class="mt-1 text-sm text-gray-400">Left to right: camera moving farther away and zooming in.</p>
-      <div class="mt-4 grid grid-cols-2 sm:grid-cols-4 gap-3">
-        <figure class="bg-slate-800 rounded-xl overflow-hidden border border-slate-700">
-          <img src="img/dolby1.jpg" alt="Dolly zoom frame 1" class="w-full aspect-[3/4] object-cover">
-          <figcaption class="px-3 py-2 text-xs text-gray-400">1 &middot; closest, widest</figcaption>
+      <div class="pair portrait">
+        <figure class="shot portrait">
+          <img src="img/face_zoomout.jpg" alt="Close-up selfie taken at arm's length with no zoom">
+          <figcaption>
+            <span class="tag bad">Wrong way</span>
+            <div class="title">Close up, no zoom</div>
+            <p class="note">Camera about a foot from my face. The nose looks big, the cheeks bulge outward, and the ears nearly disappear behind the head.</p>
+          </figcaption>
         </figure>
-        <figure class="bg-slate-800 rounded-xl overflow-hidden border border-slate-700">
-          <img src="img/dolby2.jpg" alt="Dolly zoom frame 2" class="w-full aspect-[3/4] object-cover">
-          <figcaption class="px-3 py-2 text-xs text-gray-400">2</figcaption>
+        <figure class="shot portrait">
+          <img src="img/face_zoomin.jpg" alt="Portrait taken from several feet away, zoomed in">
+          <figcaption>
+            <span class="tag good">Right way</span>
+            <div class="title">Far away, zoomed in</div>
+            <p class="note">Camera several feet back, zoomed in until the face was the same size. The proportions look natural and much closer to what a mirror shows.</p>
+          </figcaption>
         </figure>
-        <figure class="bg-slate-800 rounded-xl overflow-hidden border border-slate-700">
-          <img src="img/dolby3.jpg" alt="Dolly zoom frame 3" class="w-full aspect-[3/4] object-cover">
-          <figcaption class="px-3 py-2 text-xs text-gray-400">3</figcaption>
-        </figure>
-        <figure class="bg-slate-800 rounded-xl overflow-hidden border border-slate-700">
-          <img src="img/dolby4.jpg" alt="Dolly zoom frame 4" class="w-full aspect-[3/4] object-cover">
-          <figcaption class="px-3 py-2 text-xs text-gray-400">4</figcaption>
-        </figure>
-        <figure class="bg-slate-800 rounded-xl overflow-hidden border border-slate-700">
-          <img src="img/dolby5.jpg" alt="Dolly zoom frame 5" class="w-full aspect-[3/4] object-cover">
-          <figcaption class="px-3 py-2 text-xs text-gray-400">5</figcaption>
-        </figure>
-        <figure class="bg-slate-800 rounded-xl overflow-hidden border border-slate-700">
-          <img src="img/dolby6.jpg" alt="Dolly zoom frame 6" class="w-full aspect-[3/4] object-cover">
-          <figcaption class="px-3 py-2 text-xs text-gray-400">6</figcaption>
-        </figure>
-        <figure class="bg-slate-800 rounded-xl overflow-hidden border border-slate-700">
-          <img src="img/dolby7.jpg" alt="Dolly zoom frame 7" class="w-full aspect-[3/4] object-cover">
-          <figcaption class="px-3 py-2 text-xs text-gray-400">7</figcaption>
-        </figure>
-        <figure class="bg-slate-800 rounded-xl overflow-hidden border border-slate-700">
-          <img src="img/dolby8.jpg" alt="Dolly zoom frame 8" class="w-full aspect-[3/4] object-cover">
-          <figcaption class="px-3 py-2 text-xs text-gray-400">8 &middot; farthest, most zoom</figcaption>
-        </figure>
+      </div>
+
+      <div class="why">
+        <h3>Why it happens</h3>
+        <div>
+          <p>
+            Perspective distortion depends only on where the camera is, not on how far it is zoomed in.
+            With the lens a foot from my face, the tip of my nose is noticeably closer to it than my ears
+            are, so the nose projects much larger relative to the rest of the head.
+          </p>
+          <p>
+            Stepping back makes the depth differences across the face tiny compared to the distance to the
+            camera, so every feature is scaled by nearly the same amount. Zooming in afterward simply crops
+            and magnifies that flatter, more faithful projection.
+          </p>
+        </div>
       </div>
     </section>
 
-  </main>
+    <!-- ===== Part 2 ===== -->
+    <section id="part2" class="section">
+      <div class="section-head">
+        <div class="num">02</div>
+        <div>
+          <h2>Architectural perspective compression</h2>
+          <p class="lede">
+            The same experiment in reverse, on the Valley Life Sciences Building at Berkeley. First a
+            zoomed-in shot from far away, then a wide shot after walking up so the facade appears roughly
+            the same size.
+          </p>
+        </div>
+      </div>
 
-  <footer class="border-t border-slate-800">
-    <div class="max-w-5xl mx-auto px-6 py-8 text-sm text-gray-500 flex flex-col sm:flex-row justify-between gap-2">
-      <span>Michael Liu &middot; CS180 Fall 2026</span>
-      <a href="../" class="hover:text-gray-300 transition">&larr; Back to CS180 projects</a>
-    </div>
-  </footer>
+      <div class="pair">
+        <figure class="shot landscape">
+          <img src="img/building-far.jpg" alt="Building photographed from far away with zoom">
+          <figcaption>
+            <span class="tag">Compressed</span>
+            <div class="title">Far away, zoomed in</div>
+            <p class="note">The facade looks flat and poster-like. The columns are all nearly the same size and the side wall barely recedes.</p>
+          </figcaption>
+        </figure>
+        <figure class="shot landscape">
+          <img src="img/building-close.jpg" alt="Building photographed up close without zoom">
+          <figcaption>
+            <span class="tag">Perspective</span>
+            <div class="title">Up close, no zoom</div>
+            <p class="note">The near columns tower over the far ones and the lines of the facade converge sharply. The building feels three-dimensional and looming.</p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="why">
+        <h3>Why it happens</h3>
+        <div>
+          <p>
+            This is the selfie effect applied to a subject with a lot of depth. From far away, the near and
+            far ends of the facade are at almost the same distance from the camera, so they project to
+            nearly the same size and the depth is compressed away.
+          </p>
+          <p>
+            Up close, the near corner might be half as far from the camera as the far corner, so it appears
+            twice as large. That size gradient across the facade is what our brains read as depth. Zoom only
+            changes the magnification of the image; moving the camera changes the geometry.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Part 3 ===== -->
+    <section id="part3" class="section">
+      <div class="section-head">
+        <div class="num">03</div>
+        <div>
+          <h2>The dolly zoom</h2>
+          <p class="lede">
+            Hitchcock&rsquo;s &ldquo;Vertigo shot&rdquo;: pull the camera backward while zooming in so the subject stays the
+            same size in the frame. Eight stills of a Labubu on my windowsill, combined into an animated GIF.
+          </p>
+        </div>
+      </div>
+
+      <div class="dolly">
+        <figure class="gif">
+          <img src="img/dolly-zoom.gif" alt="Dolly zoom animation of a stuffed toy on a windowsill">
+          <figcaption>The camera pulls back and zooms in over eight frames. The toy holds its size while the skyline behind it swells and closes in.</figcaption>
+        </figure>
+        <div class="why">
+          <h3>Why it happens</h3>
+          <div>
+            <p>
+              Moving the camera back shrinks everything, but it shrinks nearby objects much faster than
+              distant ones. Zooming in then scales the whole image up uniformly.
+            </p>
+            <p>
+              If the zoom is chosen so the near subject returns to its original size, the far background,
+              which shrank by a much smaller factor, ends up magnified well beyond its original size. The
+              background seems to rush toward the subject while the subject sits still, and the narrowing
+              field of view is what makes the shot feel so disorienting.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="frames">
+        <div class="label"><span>The eight stills</span><span>Closest &amp; widest &rarr; farthest &amp; most zoom</span></div>
+        <div class="grid">
+          <figure><img src="img/dolby1.jpg" alt="Dolly zoom frame 1"><figcaption>01</figcaption></figure>
+          <figure><img src="img/dolby2.jpg" alt="Dolly zoom frame 2"><figcaption>02</figcaption></figure>
+          <figure><img src="img/dolby3.jpg" alt="Dolly zoom frame 3"><figcaption>03</figcaption></figure>
+          <figure><img src="img/dolby4.jpg" alt="Dolly zoom frame 4"><figcaption>04</figcaption></figure>
+          <figure><img src="img/dolby5.jpg" alt="Dolly zoom frame 5"><figcaption>05</figcaption></figure>
+          <figure><img src="img/dolby6.jpg" alt="Dolly zoom frame 6"><figcaption>06</figcaption></figure>
+          <figure><img src="img/dolby7.jpg" alt="Dolly zoom frame 7"><figcaption>07</figcaption></figure>
+          <figure><img src="img/dolby8.jpg" alt="Dolly zoom frame 8"><figcaption>08</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>Michael Liu · CS180 · Fall 2026</span>
+      <a href="../">&larr; All CS180 projects</a>
+    </footer>
+  </main>
 
 </body>
 </html>

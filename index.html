@@ -1,25 +1,47 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="styles.css" rel="stylesheet">
+  <title>Michael Liu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="assets/site.css" rel="stylesheet">
 </head>
 <body>
-  <div class="p-20 bg-slate-800 h-screen w-screen">
-    <div class="p-16 bg-slate-900">
-      <h1 class="text-6xl font-bold underline text-center text-gray-200">
-        Michael Liu
-      </h1>
 
-      <div class="w-full border-t border-gray-500 my-8"></div>
-
-      <div class="text-center">
-        <a href="cs180/" class="inline-block px-6 py-3 rounded-xl bg-slate-800 border border-slate-600 text-gray-200 hover:border-sky-500 hover:text-white transition">
-          CS180 Projects &rarr;
-        </a>
+  <nav class="nav">
+    <div class="wrap">
+      <div class="brand">Michael Liu</div>
+      <div class="links">
+        <a href="cs180/">CS180</a>
       </div>
     </div>
-  </div>
+  </nav>
+
+  <header class="hero wrap">
+    <div class="eyebrow">UC Berkeley</div>
+    <h1>Michael <em>Liu</em></h1>
+    <p class="lede">Student at UC Berkeley. This site collects my course project write-ups.</p>
+  </header>
+
+  <main class="wrap">
+    <div class="list">
+      <a class="row" href="cs180/">
+        <div class="k">Fall 2026</div>
+        <div>
+          <div class="t">CS180: Intro to Computer Vision &amp; Computational Photography</div>
+          <div class="d">Project write-ups, starting with Project 0.</div>
+        </div>
+        <img src="cs180/proj0/img/dolby1.jpg" alt="">
+      </a>
+    </div>
+
+    <footer class="footer">
+      <span>Michael Liu</span>
+    </footer>
+  </main>
+
 </body>
 </html>
